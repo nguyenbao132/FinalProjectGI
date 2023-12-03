@@ -5,9 +5,37 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\s_run</sprite>
+    <sprite>sprites\s_jump</sprite>
+    <sprite>sprites\s_idle</sprite>
+    <sprite>sprites\s_roll</sprite>
+    <sprite>sprites\s_dfence</sprite>
+    <sprite>sprites\s_attack</sprite>
+    <sprite>sprites\s_fly</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\BG_tiset1</background>
+    <background>background\tl3</background>
+    <background>background\BG_tiset2</background>
+    <background>background\BG2</background>
+    <background>background\BGtiset2</background>
+    <background>background\BG_tiset</background>
+    <background>background\background6</background>
+    <background>background\tl_decor</background>
+    <background>background\background9</background>
+    <background>background\BG3</background>
+    <background>background\tl4</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\s_turtle</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+    <room>rooms\room1</room>
+    <room>rooms\room2</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
