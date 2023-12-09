@@ -13,6 +13,7 @@
     <sprite>sprites\s_dfence</sprite>
     <sprite>sprites\s_attack</sprite>
     <sprite>sprites\s_fly</sprite>
+    <sprite>sprites\s_ground</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tiset1</background>
@@ -28,8 +29,19 @@
     <background>background\tl4</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_getinput.gml</script>
+    <scripts name="turtle_states">
+      <script>scripts\scr_turtle_idle.gml</script>
+      <script>scripts\scr_turtle_run.gml</script>
+      <script>scripts\scr_turtle_attack.gml</script>
+      <script>scripts\scr_turtle_jump.gml</script>
+      <script>scripts\scr_turtle_roll.gml</script>
+    </scripts>
+  </scripts>
   <objects name="objects">
-    <object>objects\s_turtle</object>
+    <object>objects\obj_turtle</object>
+    <object>objects\obj_ground</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

@@ -1,0 +1,16 @@
+scr_getinput();
+
+sprite_index = s_attack; //doi sprite
+image_speed = 1;
+
+counter += 1; //count 18 image
+if counter == 18 { //sau khi xong het 18 imgage cua sprite
+    if (image_xscale > 0) { //neu nhu dang quay sang phai 
+        instance_create(obj_turtle.x + 15, obj_turtle.y - 10, obj_dealDame);
+    } else if (image_xscale < 0) { //dang quay sang trai
+        instance_create(obj_turtle.x - 45, obj_turtle.y - 10, obj_dealDame);
+    }
+    
+    counter = 0; //reset lai counter
+    state = turtleState.idle; // quay ve trang thai dung yen
+}
