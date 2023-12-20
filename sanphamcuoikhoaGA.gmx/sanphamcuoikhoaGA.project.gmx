@@ -13,8 +13,16 @@
     <sprite>sprites\s_dfence</sprite>
     <sprite>sprites\s_attack</sprite>
     <sprite>sprites\s_fly</sprite>
+    <sprite>sprites\s_throw</sprite>
     <sprite>sprites\s_ground</sprite>
     <sprite>sprites\s_dealdmg</sprite>
+    <sprite>sprites\s_monter1_right</sprite>
+    <sprite>sprites\s_monter1_left</sprite>
+    <sprite>sprites\s_monter2_right</sprite>
+    <sprite>sprites\s_monter2_left</sprite>
+    <sprite>sprites\s_monter3_right</sprite>
+    <sprite>sprites\s_monter3_left</sprite>
+    <sprite>sprites\s_ball</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tiset1</background>
@@ -45,11 +53,15 @@
     <object>objects\obj_turtle</object>
     <object>objects\obj_ground</object>
     <object>objects\o_dealdmg</object>
+    <object>objects\o_monter1</object>
+    <object>objects\o_monter2</object>
+    <object>objects\o_monter3</object>
+    <object>objects\o_ball</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room2</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
