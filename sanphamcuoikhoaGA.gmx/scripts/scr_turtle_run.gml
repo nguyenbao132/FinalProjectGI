@@ -8,10 +8,10 @@ if (pressLeft + pressRight == 0) { //neu khong nhan phim nao thi dung yen
     state = turtleState.idle;
 }
 
-if (pressUp) { //neu dang nhan phim len, nhay len tren 10 don vi
-    moveX = 0;
-    moveY = -10;
+if (pressUp and jumpCounter < jumpMax) { //neu dang nhan phim len, nhay len tren 10 don vi
+    moveY = -11;
     state = turtleState.jump; //set trang thai nhay
+    jumpCounter++;
 }
 
 if (pressSpace) { //an phim danh

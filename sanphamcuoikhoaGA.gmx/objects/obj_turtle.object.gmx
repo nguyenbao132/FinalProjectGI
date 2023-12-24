@@ -42,6 +42,8 @@ grav = 1;
 moveX = 0;
 moveY = 0;
 counter = 0;
+jumpCounter = 0;
+jumpMax = 2;
 hp = 3
 hp_current = 100;
 hp_max = 100;
@@ -108,6 +110,7 @@ if (place_meeting(x, y + moveY, obj_ground))
         }
             
     moveY = 0; // khi va cham thi dung yen
+    jumpCounter = 0;
 }
 
 if (place_meeting(x + moveX, y - 2, obj_ground))
@@ -118,6 +121,7 @@ if (place_meeting(x + moveX, y - 2, obj_ground))
         }
                 
     moveX = 0;
+    jumpCounter = 0;
 }
 
 
@@ -155,7 +159,7 @@ if (pressLeft + pressRight != 0) { //neu nhu dang an 1 trong 2 phim
           <argument>
             <kind>1</kind>
             <string>draw_self();
-draw_healthbar(x - 11,y - 7 , x +  12,y - 7,(hp_current / hp_max) * 100,c_black,c_red,c_green,0, true, true);
+draw_healthbar(x - 12,y - 27 , x +  12,y - 24,(hp_current / hp_max) * 100,c_black,c_red,c_green,0, true, true);
 </string>
           </argument>
         </arguments>

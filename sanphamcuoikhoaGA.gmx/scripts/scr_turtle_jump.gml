@@ -28,6 +28,12 @@ if (pressRight) {
     }
 } 
 
+if (pressUp and jumpCounter < jumpMax) {
+    moveY = -11;
+    jumpCounter++;
+    state = turtleState.jump;
+}
+
 if (pressLeft) {
     moveX = -(spd -1);
     if (pressSpace) {

@@ -6,8 +6,9 @@ if (pressSpace) {
     state = turtleState.attack;
 } else if (pressLeft or pressRight) {
     state = turtleState.run;
-} else if (pressUp) {
-    moveY = -10;
+} else if (pressUp and jumpCounter < jumpMax) {
+    moveY = -11;
+    jumpCounter++;
     state = turtleState.jump;
 }
 
