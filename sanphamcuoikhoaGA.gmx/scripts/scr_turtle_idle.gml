@@ -10,6 +10,8 @@ if (pressSpace) {
     moveY = -11;
     jumpCounter++;
     state = turtleState.jump;
+} else if (pressS){
+    state = turtleState.throw;
 }
 
 moveX = 0;

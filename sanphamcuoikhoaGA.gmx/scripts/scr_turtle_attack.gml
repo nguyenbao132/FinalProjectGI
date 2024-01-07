@@ -2,6 +2,7 @@ scr_getinput();
 
 sprite_index = s_attack; //doi sprite
 image_speed = 1;
+moveY=-2;
 
 counter += 1; //count 18 image
 if counter == 18 { //sau khi xong het 18 imgage cua sprite

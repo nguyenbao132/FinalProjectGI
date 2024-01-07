@@ -23,6 +23,8 @@
     <sprite>sprites\s_monter3_right</sprite>
     <sprite>sprites\s_monter3_left</sprite>
     <sprite>sprites\s_ball</sprite>
+    <sprite>sprites\s_star</sprite>
+    <sprite>sprites\s_vortex</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tiset1</background>
@@ -47,6 +49,7 @@
       <script>scripts\scr_turtle_jump.gml</script>
       <script>scripts\scr_turtle_roll.gml</script>
       <script>scripts\scr_turtle_dfence.gml</script>
+      <script>scripts\scr_turtle_throw.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -57,6 +60,8 @@
     <object>objects\o_monter2</object>
     <object>objects\o_monter3</object>
     <object>objects\o_ball</object>
+    <object>objects\obj_star</object>
+    <object>objects\obj_vortex</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

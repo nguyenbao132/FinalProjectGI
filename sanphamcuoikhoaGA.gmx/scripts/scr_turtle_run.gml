@@ -21,3 +21,6 @@ if (pressSpace) { //an phim danh
 if (pressShift) {
     state = turtleState.roll;
 }
+if (pressS) {
+    state = turtleState.throw;
+}

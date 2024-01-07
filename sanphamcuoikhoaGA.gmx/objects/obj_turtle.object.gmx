@@ -32,7 +32,7 @@ enum turtleState { idle,
     roll,
     defend,
     attack,
-    fly
+    throw
 }
 
 state = turtleState.idle;
@@ -47,6 +47,7 @@ jumpMax = 2;
 hp = 3
 hp_current = 100;
 hp_max = 100;
+global.star = 0;
 global.left = false;
 </string>
           </argument>
@@ -89,6 +90,9 @@ switch (state) {
         break;
     case (turtleState.roll):
         scr_turtle_roll();
+        break;
+    case (turtleState.throw):
+        scr_turtle_throw();
         break;
 //    case (turtleState.defend):
 //        scr_turtle_defend();
@@ -139,6 +143,43 @@ if (pressLeft + pressRight != 0) { //neu nhu dang an 1 trong 2 phim
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_star">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.star +=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>other</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="8" enumb="0">
@@ -236,7 +277,7 @@ draw_healthbar(x - 12,y - 27 , x +  12,y - 24,(hp_current / hp_max) * 100,c_blac
           </argument>
           <argument>
             <kind>0</kind>
-            <string>20</string>
+            <string>10</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -314,7 +355,7 @@ draw_healthbar(x - 12,y - 27 , x +  12,y - 24,(hp_current / hp_max) * 100,c_blac
           </argument>
           <argument>
             <kind>0</kind>
-            <string>20</string>
+            <string>10</string>
           </argument>
           <argument>
             <kind>0</kind>
