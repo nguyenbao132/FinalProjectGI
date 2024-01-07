@@ -25,6 +25,8 @@
     <sprite>sprites\s_ball</sprite>
     <sprite>sprites\s_star</sprite>
     <sprite>sprites\s_vortex</sprite>
+    <sprite>sprites\s_door_open</sprite>
+    <sprite>sprites\s_door_close</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tiset1</background>
@@ -57,8 +59,11 @@
     <object>objects\obj_ground</object>
     <object>objects\o_dealdmg</object>
     <object>objects\o_monter1</object>
+    <object>objects\o_monster1_r2</object>
     <object>objects\o_monter2</object>
+    <object>objects\o_monster2_r2</object>
     <object>objects\o_monter3</object>
+    <object>objects\o_monster3_r2</object>
     <object>objects\o_ball</object>
     <object>objects\obj_star</object>
     <object>objects\obj_vortex</object>
@@ -67,6 +72,7 @@
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\room2</room>
+    <room>rooms\room_end</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

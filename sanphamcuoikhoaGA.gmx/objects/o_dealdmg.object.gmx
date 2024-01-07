@@ -2,7 +2,7 @@
 <object>
   <spriteName>s_dealdmg</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -49,7 +49,8 @@
           <argument>
             <kind>1</kind>
             <string>counter +=1;
-if (counter == 18){
+if (counter == 17){
+    counter = 0
     instance_destroy();
 }
 </string>
