@@ -1,6 +1,7 @@
 scr_getinput();
 
 sprite_index = s_jump; //doi hinh anh thanh jump
+image_speed = 1/2;
 
 
 // Idle when collision ground
@@ -15,6 +16,7 @@ if (place_meeting(x, y + moveY, obj_ground)) //neu sap va cham mat dat
         break;
     }
     state = turtleState.idle;
+    image_speed = 1;
 }
 // Movement on the air
 if (pressSpace) {

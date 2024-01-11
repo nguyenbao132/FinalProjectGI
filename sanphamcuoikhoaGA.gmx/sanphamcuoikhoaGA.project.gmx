@@ -4,7 +4,15 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\so_background</sound>
+    <sound>sound\so_start</sound>
+    <sound>sound\so_dead</sound>
+    <sound>sound\so_damaged</sound>
+    <sound>sound\so_hit</sound>
+    <sound>sound\so_collect</sound>
+    <sound>sound\so_shoot</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_run</sprite>
     <sprite>sprites\s_jump</sprite>
@@ -23,10 +31,14 @@
     <sprite>sprites\s_monter3_right</sprite>
     <sprite>sprites\s_monter3_left</sprite>
     <sprite>sprites\s_ball</sprite>
+    <sprite>sprites\s_monster_ball</sprite>
     <sprite>sprites\s_star</sprite>
     <sprite>sprites\s_vortex</sprite>
     <sprite>sprites\s_door_open</sprite>
     <sprite>sprites\s_door_close</sprite>
+    <sprite>sprites\s_playbtn</sprite>
+    <sprite>sprites\s_exitbtn</sprite>
+    <sprite>sprites\s_trophy</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\BG_tiset1</background>
@@ -40,6 +52,8 @@
     <background>background\background9</background>
     <background>background\BG3</background>
     <background>background\tl4</background>
+    <background>background\bg_win</background>
+    <background>background\BG_Title</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -63,12 +77,19 @@
     <object>objects\o_monter2</object>
     <object>objects\o_monster2_r2</object>
     <object>objects\o_monter3</object>
+    <object>objects\o_boss</object>
     <object>objects\o_monster3_r2</object>
     <object>objects\o_ball</object>
+    <object>objects\o_monster_ball</object>
     <object>objects\obj_star</object>
     <object>objects\obj_vortex</object>
+    <object>objects\o_playbtn</object>
+    <object>objects\o_exitbtn</object>
+    <object>objects\o_monster</object>
+    <object>objects\o_trophy</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room_menu</room>
     <room>rooms\room0</room>
     <room>rooms\room1</room>
     <room>rooms\room2</room>
