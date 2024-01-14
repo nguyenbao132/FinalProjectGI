@@ -95,6 +95,7 @@ global.left = false;
 
 scr_getinput();
 
+/// trang thai player
 switch (state) {
     case (turtleState.idle):
         scr_turtle_idle();
