@@ -7,4 +7,3 @@ if (image_xscale>0){
 } else {
     moveX = -(spd +1);
 }
-
